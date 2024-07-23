@@ -1,0 +1,58 @@
+<!DOCTYPE html> <html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0"> <title>Tricky Button Form</title> 
+<style>
+body {
+font-family: Arial, sans-serif; 
+display: flex;
+justify-content: center; 
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+.container {
+text-align: center;
+}
+input {
+display: block;
+margin: 10px auto; 
+padding: 10px; 
+width: 200px;
+}
+button {
+padding: 10px 20px;
+cursor: pointer;
+}
+</style> 
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head> 
+<body>
+<div class="container"> 
+<h2>Do you want to increase your salary, click on increase button below</h2>
+<input type="text" id="salary" placeholder="Salary in AED" >
+<button id="createButton">Increase Now</button>
+</div>
+<script>
+
+$(document).ready(function() {
+	$('#createButton').on('mouseover', function() {
+		// Code to execute when mouseover event occurs
+		console.log('Mouse is over the button!');
+		// You can add more actions here, such as changing the button's style
+		$(this).css('background-color', 'lightblue');
+		const x = Math.random() * (window.innerWidth-createButton.clientWidth);
+        const y = Math.random() * (window.innerHeight-createButton.clientHeight);
+		console.log("x====="+x);
+		console.log("y====="+y);
+		createButton.style.position = 'absolute';
+		createButton.style.left = x+'px';
+		createButton.style.top = y+'px';
+		$(this).text('Next Month');
+	});
+});
+</script>
+</body> 
+</html>
