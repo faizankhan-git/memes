@@ -31,13 +31,15 @@ cursor: pointer;
 </head> 
 <body>
 <div class="container"> 
-<h2>Do you want to increase your salary, click on increase button below</h2>
+<h2>Do you want to increase your salary? </h2>
+<h2>Enter you salary in below text box and then click on "Increase Now"</h2>
 <input type="text" id="salary" placeholder="Salary in AED" >
-<button id="createButton">Increase Now</button>
+<button id="createButton" style="background-color:lightblue">Increase Now</button>
 </div>
 <script>
 
 $(document).ready(function() {
+    const texts = ['Next Month', 'Coming Soon', 'Please wait', 'Stay Tuned', 'Your future is bright']; 
 	$('#createButton').on('mouseover', function() {
 		// Code to execute when mouseover event occurs
 		console.log('Mouse is over the button!');
@@ -50,7 +52,8 @@ $(document).ready(function() {
 		createButton.style.position = 'absolute';
 		createButton.style.left = x+'px';
 		createButton.style.top = y+'px';
-		$(this).text('Next Month');
+		const randomIndex = Math.floor(Math.random() * texts.length);
+        $(this).text(texts[randomIndex]);
 	});
 });
 </script>
