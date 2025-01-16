@@ -39,8 +39,40 @@ cursor: pointer;
 <script>
 
 $(document).ready(function() {
-    const texts = ['Next Month', 'Next Month Pakka', 'Please wait for one more month', 'Stay Tuned, you will get', 'Your future is bright, next month zaroor','അടുത്ത മാസം',
-	'അടുത്ത മാസം ഉറപ്പാണ്','ദയവായി ഒരു മാസം കൂടി കാത്തിരിക്കൂ','തുടരുക, നിങ്ങൾക്ക് ലഭിക്കും','നിങ്ങളുടെ ഭാവി ഇവിടെ ശോഭനമാണ്, അടുത്ത മാസം ഉറപ്പാണ്','உங்கள் எதிர்காலம் இங்கே பிரகாசமாக இருக்கிறது, அடுத்த மாதம் நிச்சயம்','அடுத்த மாதம்','அடுத்த மாதம் நிச்சயம்']; 
+    //const texts = ['Next Month', 'Next Month Pakka', 'Please wait for one more month', 'Stay Tuned, you will get', 'Your future is bright, next month zaroor','അടുത്ത മാസം',
+	//'അടുത്ത മാസം ഉറപ്പാണ്','ദയവായി ഒരു മാസം കൂടി കാത്തിരിക്കൂ','തുടരുക, നിങ്ങൾക്ക് ലഭിക്കും','നിങ്ങളുടെ ഭാവി ഇവിടെ ശോഭനമാണ്, അടുത്ത മാസം ഉറപ്പാണ്','உங்கள் எதிர்காலம் இங்கே பிரகாசமாக இருக்கிறது, அடுத்த மாதம் நிச்சயம்','அடுத்த மாதம்','அடுத்த மாதம் நிச்சயம்']; 
+	const texts = [
+	'Next Month', 
+	'Next Month For Sure', 
+	'Please wait for one more month', 
+	'Stay Tuned, you will get it', 
+	'Your future is bright, next month for sure',
+	'Hold tight, your raise is just around the corner... like, way around the corner.', 
+	'Next paycheck is going to be a game-changer, just keep watching.',
+	'The salary increase is coming soon, like the tortoise in the race.',
+	'Your raise is a VIP guest. It\'s on the way but taking its sweet time.',
+	'Stay tuned... Your raise is coming after we finish funding the company’s goldfish tank.',
+	'The salary increase is scheduled for next month... unless we have another surprise coffee break!',
+	'I swear the system is processing your raise. It just needs more coffee.',
+	'Just one more month, and you\'ll see that raise... or at least the first clue of it!',
+	'The salary increase is in the pipeline... just waiting for it to arrive from the 7th dimension.',
+	'Brace yourself for an epic raise! It’s like the Avengers assembling... just with more paperwork.',
+	'الشهر المقبل', 
+	'الشهر المقبل بالتأكيد', 
+	'يرجى الانتظار لمدة شهر آخر', 
+	'ابق متابعًا، ستحصل عليه', 
+	'مستقبلك مشرق، الشهر المقبل بالتأكيد',
+	'تمسك، زيادتك على وشك الوصول... مثلًا، في الزاوية البعيدة.',
+	'الراتب التالي سيكون تغييرًا كبيرًا، فقط استمر في المتابعة.',
+	'زيادة الراتب قادمة قريبًا، مثل السلحفاة في السباق.',
+	'زيادة راتبك ضيف VIP. إنها في الطريق ولكن تأخذ وقتها.',
+	'ابق متابعًا... زيادتك قادمة بعد أن ننتهي من تمويل حوض الأسماك في الشركة.',
+	'زيادة الراتب مجدولة للشهر المقبل... ما لم يكن لدينا استراحة قهوة مفاجئة أخرى!',
+	'أقسم أن النظام يعالج زيادتك. يحتاج فقط إلى مزيد من القهوة.',
+	'شهر آخر فقط، وسترى الزيادة... أو على الأقل أول تلميح لها!',
+	'زيادة الراتب في الطريق... فقط في انتظار وصولها من البُعد السابع.',
+	'استعد لزيادة ملحمية! إنها مثل تجميع المنتقمين... ولكن مع المزيد من الأوراق.'
+	];
 	$('#createButton').on('mouseover', function() {
 		// Code to execute when mouseover event occurs
 		console.log('Mouse is over the button!');
